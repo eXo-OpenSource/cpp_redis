@@ -9,11 +9,16 @@ project "cpp_redis"
     vpaths {
         ["Headers/*"] = "includes/cpp_redis/**.hpp",
         ["Sources/*"] = "sources/**.cpp",
-		["*"] = "premake5.lua"
-	}
+        ["*"] = "premake5.lua"
+    }
     
     files {
-		"premake5.lua",
-		"**.cpp",
+        "premake5.lua",
+        "**.cpp",
         "**.hpp"
-	}
+    }
+    
+    excludes {
+        "examples/**",
+        "tests/**"
+    }
