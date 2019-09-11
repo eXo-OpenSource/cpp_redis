@@ -1,7 +1,7 @@
 solution "cpp_redis"
 	configurations { "Debug", "Release" }
 	location ( "Build" )
-	targetdir "Bin/%{cfg.buildcfg}/%{cfg.platform}"
+	targetdir "Bin/%{cfg.buildcfg}"
 
 	platforms { "x86", "x64" }
 	pic "On"
