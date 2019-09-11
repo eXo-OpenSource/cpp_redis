@@ -17,8 +17,4 @@ solution "cpp_redis"
 		optimize "On"
 
 	include "cpp_redis"
-
-	externalproject "tacopie"
-		location "tacopie"
-		kind "StaticLib"
-		language "C++"
+	include "tacopie"

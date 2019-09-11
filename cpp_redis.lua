@@ -4,7 +4,9 @@ project "cpp_redis"
     kind "StaticLib"
     targetname "cpp_redis"
 
-    includedirs { "includes" }
+    includedirs { "includes", "tacopie/includes" }
+
+    dependson { "tacopie" }
 
     vpaths {
         ["Headers/*"] = "includes/cpp_redis/**.hpp",
@@ -19,6 +21,7 @@ project "cpp_redis"
     }
     
     excludes {
+        "tacopie/**",
         "examples/**",
         "tests/**"
     }
