@@ -7,6 +7,7 @@ project "cpp_redis"
     includedirs { "includes", "tacopie/includes" }
 
     dependson { "tacopie" }
+    links { "tacopie" }
 
     vpaths {
         ["Headers/*"] = "includes/cpp_redis/**.hpp",

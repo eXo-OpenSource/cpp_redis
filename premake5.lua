@@ -17,4 +17,4 @@ solution "cpp_redis"
 		optimize "On"
 
 	include "cpp_redis"
-	include "tacopie"
+	include "tacopie/tacopie"
