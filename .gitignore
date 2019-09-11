@@ -28,7 +28,6 @@
 
 # Autogen directories
 build
-*build*
 deps
 target
 lib
