@@ -16,5 +16,5 @@ solution "cpp_redis"
 	filter "configurations:Release"
 		optimize "On"
 
-	include "cpp_redis"
 	include "tacopie/tacopie"
+	include "cpp_redis"
